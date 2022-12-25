@@ -1,0 +1,57 @@
+ .button {
+     position: absolute;
+     display: flex;
+     justify-content: space-between;
+     width: 80%;
+     bottom: 0;
+ }
+
+
+ .button button {
+     cursor: pointer;
+
+ }
+
+ .confirm {
+     background-color: hsl(243, 100%, 62%);
+ }
+
+ .prev {
+     background-color: #fff;
+     border: none;
+     font-weight: bold;
+     color: hsl(231, 11%, 63%);
+ }
+
+ .disable {
+     cursor: not-allowed;
+ }
+
+ .prev:focus,
+ .prev:hover {
+     color: hsl(213, 96%, 18%);
+ }
+
+
+ .next {
+     background-color: hsl(213, 96%, 18%);
+     color: #fff;
+     padding: 0.8rem;
+     border-radius: 5px;
+     font-weight: 400;
+     border: none;
+ }
+
+ @media screen and (max-width:620px) {
+     .button {
+         position: fixed;
+         background-color: #fff;
+         width: 100%;
+         left: 0;
+         padding: 0.8rem;
+     }
+
+     .next {
+         margin-right: 30px;
+     }
+ }

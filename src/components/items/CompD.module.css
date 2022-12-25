@@ -1,0 +1,114 @@
+.ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 22px;
+    width: 90%;
+    margin-top: 2rem;
+}
+
+.ul li {
+    padding: 1rem;
+    background-color: hsl(217, 100%, 97%);
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;
+
+}
+.ul li:first-child{
+    height: 2.5rem;
+}
+.label {
+    margin: 0;
+    flex: 4 1 auto;
+    color:hsl(213, 96%, 18%);
+
+}
+
+.ul li h4 {
+    margin: 0;
+}
+
+.ul li:first-child h5 {
+    margin-right: 1.2rem;
+    color:hsl(213, 96%, 18%);
+}
+
+.label button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid hsl(231, 11%, 63%);
+    color: hsl(231, 11%, 63%);
+    padding: 0;
+    font-weight: 400;
+    margin-top: 0.4rem;
+}
+
+.ul li::after {
+    content: '';
+    color: hsl(231, 11%, 63%);
+    border-bottom: 1px solid hsl(231, 11%, 63%);
+    /* margin-left: -0.7rem; */
+    bottom: 0;
+    width: 90%;
+    position: absolute;
+}
+
+.ul li:last-child::after {
+    content: '';
+    border-bottom: none;
+}
+
+.ul li:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: grid;
+
+}
+.last h5{
+    margin: 0;
+    /* color: hsl(231, 11%, 63%); */
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    margin-right: 1.2rem;
+}
+.item h5:first-child{
+    color:hsl(231, 11%, 63%);
+    font-size: medium;
+    font-weight: 500;
+
+}
+
+
+.ul li:first-child {
+    margin-right: 1.2rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.total h5:first-child {
+    color: hsl(231, 11%, 63%);
+}
+
+.total h3:last-child {
+    color: hsl(243, 100%, 62%);
+    margin-right: 4rem;
+}
+
+@media screen and (max-width:620px) {
+    .ul {
+        width: 100%;
+    }
+}

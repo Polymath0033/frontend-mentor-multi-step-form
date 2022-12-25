@@ -1,0 +1,69 @@
+.flex {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.3rem;
+    margin-top: 1rem;
+}
+
+.flex label {
+    border: 2px solid hsl(229, 24%, 87%);
+    border-radius: 12px;
+    padding-left: 0.1rem;
+    cursor: pointer;
+}
+
+.flex img {
+    margin: 0.3rem 0.4rem;
+}
+
+input[type='radio'] {
+    display: none;
+    /* appearance: none; */
+}
+
+.flex h5 {
+    margin: 0.8rem;
+}
+.bonus{
+    font-size: small;
+}
+.month {
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+}
+
+input[type='radio']:checked+label {
+    border: 1.4px solid hsl(213, 96%, 18%);
+    background-color: hsl(231, 100%, 99%);
+    appearance: none;
+}
+
+@media screen and (max-width:620px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex label {
+        display: flex;
+        padding: 0.5rem;
+    }
+
+    .flex img {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        margin-left: 0.3rem;
+
+    }
+
+    .flex h5 {
+        margin: 0.5rem;
+
+    }
+
+    .flex label div {
+        margin: 0;
+        margin-left: 0.6rem;
+    }
+}

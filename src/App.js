@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import "./App.css";
+import SideBar from "./components/SideBar";
+import Main from "./components/Main";
+import { array } from "./data";
+import StoreContext from "./store/store";
 
 function App() {
+  const store = useContext(StoreContext);
+  const current = store.current;
+  const prev = () => {
+    store.prev();
+  };
+  const next = () => {
+    store.next();
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content">
+        <SideBar className="side" array={array} current={current} />
+        <Main
+          className="main"
+          array={array}
+          next={next}
+          current={current}
+          prev={prev}
+        />
+      </div>
     </div>
   );
 }
 
-export default App;
+export default React.memo(App);

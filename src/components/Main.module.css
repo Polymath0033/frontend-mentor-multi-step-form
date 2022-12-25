@@ -1,0 +1,62 @@
+.content {
+    padding: 2rem;
+    position: relative;
+}
+
+.content h1,
+h6 {
+    margin: 0.2rem;
+}
+
+.content h1 {
+    color: hsl(213, 96%, 18%);
+}
+
+.content h6 {
+    color: hsl(229, 24%, 87%);
+    font-weight: 500;
+    font-size: .8rem;
+}
+
+/* .content .button {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    bottom: 0;
+}
+
+
+.button button {
+    cursor: pointer;
+}
+
+.prev {
+    color: hsl(213, 96%, 18%);
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+.next {
+    background-color: hsl(213, 96%, 18%);
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-weight: 400;
+    border: none;
+}
+
+@media screen and (max-width:620px) {
+    .content .button {
+        position: fixed;
+        background-color: #fff;
+        width: 100%;
+        left: 0;
+        padding: 0.8rem;
+    }
+
+    .next {
+        margin-right: 30px;
+    }
+} */

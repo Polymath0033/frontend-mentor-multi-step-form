@@ -1,0 +1,43 @@
+.form {
+    display: grid;
+    margin-top: 1rem;
+}
+
+.form label {
+    font-weight: bold;
+    margin: 0.9rem 0 0.3rem 0;
+    color: hsl(213, 96%, 18%);
+}
+
+.form input {
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    border: 0.12rem solid hsl(231, 11%, 63%);
+    font-weight: bold;
+}
+
+.form input:focus {
+    outline: 1px solid hsl(229, 24%, 87%);
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.head p {
+    color: hsl(354, 84%, 57%);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.head label,
+.head p {
+    margin: 0;
+}
+
+.error {
+    border: 1px solid hsl(354, 84%, 57%) !important;
+}

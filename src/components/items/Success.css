@@ -1,0 +1,23 @@
+.success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    /* width: 100%; */
+    height: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.success h2 {
+    font-weight: 900;
+    color: hsl(213, 96%, 18%);
+    font-size: 1.5rem;
+}
+
+.success p {
+    color: hsl(231, 11%, 63%);
+    font-weight: 500;
+    margin-top: 0.8rem;
+}
